@@ -6,7 +6,7 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("6872363627:AAFsdghY3DNTZNz4CBD8JxSbHoT6VrNNtSs")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN")
     TELEGRAM_API = os.environ.get("TELEGRAM_API")
     OWNER = os.environ.get("OWNER")
     AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002233071560').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
